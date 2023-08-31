@@ -7,6 +7,55 @@
     font-family: 'Inter', sans-serif;
 
 }
+.navbar{
+    background-color: #f02228;
+    box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    gap: 20px;
+   
+
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.kfc{
+    /* border: 1px solid black; */
+
+    width: 40%;
+}
+.left-items{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 80px;
+    justify-content: space-evenly;
+}
+.right-items{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rimg1 img{
+    width: 63px;
+    margin-top: 4px;
+    
+    height: 63px;
+}
+.nav1{
+
+    margin-top: 10px;
+}
+.rimg2{
+    border-radius: 100%;
+    box-shadow: 0px 2.5px 0.5px  #202329;
+}
 
 .findusbackground{
    
@@ -14,19 +63,21 @@
     box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
     height: 1327px;
     position: relative;
+    width: 100%;
     
 }
 .findusbackground .heading{
     color: #F22D2A;
 display: flex;
 justify-content: left;
-padding-left: 510px;
+padding-left: 430px;
 
 font-size: 80px;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
 padding-top: 151px;
+
 }
 
 .locationone{
@@ -35,7 +86,7 @@ padding-top: 151px;
 height: 400px;
 flex-shrink: 0;
 top: 345px;
-margin-left: 110px;
+left: 50px;
 border-radius: 12px;
 background-color: #F22D2A;
 box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
@@ -48,7 +99,7 @@ box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
 height: 400px;
 flex-shrink: 0;
 top: 345px;
-left: 610px;
+left: 527px;
 
 
 border-radius: 12px;
@@ -62,7 +113,7 @@ box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
 height: 400px;
 flex-shrink: 0;
 top: 345px;
-left: 1107px;
+left: 1000px;
 
 
 border-radius: 12px;
@@ -155,8 +206,8 @@ padding-left: 22px;
     border-radius: 12px;
    width: 500px;
     height: 156px;
-    top: 1000px;
-    left: 105px;
+    top: 900px;
+    left: 50px;
 
 }
 .findus4 .head{
@@ -179,8 +230,8 @@ padding-left:25px ;
     border-radius: 12px;
    width: 500px;
     height: 156px;
-    top: 1000px;
-    left: 700px;
+    top: 900px;
+    left: 600px;
 }
 .findus5 .head{
     color: #FFF;
@@ -262,7 +313,7 @@ padding-left:25px ;
 /* Footer */
 .footer{
     background-color: #202329;
-    height: 65vh;
+    height: 450px;
 }
 .footermain{
     position: absolute;
@@ -280,7 +331,6 @@ padding-left:25px ;
 .pfont p{
     font-size: 25px;
     color: white;
-    padding-top: 10px;
 }
 .footer-container{
     position: relative;
@@ -308,7 +358,7 @@ padding-left:25px ;
 }
 .fkfc img{
     margin-top: 14px;
-    height: 63vh;
+    height: 400px;
     position: absolute;
 }
 .footerend{
@@ -318,10 +368,18 @@ padding-left:25px ;
     /* border: 1px solid black; */
     width: 85%;
     margin-left: 80px;
-    height: 50ch;
+    height: 422px;
 }
 .footerend p{
     color: #D9DBE1;
     font-size: 18px;
+}
+.pfont{
+    gap: 24px;
+}
+.fcont{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 /* End of Footer */

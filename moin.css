@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 /* NavBar */
-*{
-    padding: 0%;
-    margin: 0%;
-}
 .navbar{
     background-color: #F22D2A;
     display: flex;
@@ -48,13 +39,17 @@
 
 /* Deals */
 .deals{
-    background-color: #f4eee3;
-    height: 100vh;
+    background-image: url(/Assets/kfc\ back.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    width: 100%;
 } 
 .deals1{
-    border:  1px solid black;
-    width: 90vw;
-    margin-left: 78px;
+    /* border:  1px solid black; */
+    width: 95vw;
+    margin-left: 20px;
     display: flex;
     justify-content: space-evenly;
     height: 297px;
@@ -66,6 +61,7 @@
     height: 220px;
     margin-top: 60px;
     display: flex;
+    /* border: 1px solid black; */
   }
 .deals3{
     width: 400px;
@@ -88,7 +84,7 @@
 }
 .deals2_1{
     /* border: 1px solid black; */
-    width: 30vw;
+    width: 410px;
     margin-left: 25px;
 }
 .deals7{
@@ -96,12 +92,141 @@
     margin-left: 110px;
     margin-top: -110px;
 }
-
-
-
-
-
-
+.deals2_2{
+    /* border: 1px solid black; */
+    width: 500px;
+    margin-left: 15px;
+}
+.deals2_2 h2{
+    background-color: #ffc71f;
+    border-radius: 40px;
+    padding: 10px;
+    width: 120px;
+}
+.deals2_1 h2{
+    background-color: #f73d27;
+    border-radius: 40px;
+    padding: 10px;
+    width: 120px;
+}
+.deals2_3 h2{
+    background-color: #f73d27;
+    border-radius: 40px;
+    padding: 10px;
+    width: 120px;
+}
+.story-box_1{
+    background-color: #F22D2A;
+    border-radius: 10px;
+    width: 400px;
+    height: 220px;
+    margin-top: 60px;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.deals4{
+    margin-left: 215px;
+    margin-top: 30px;
+    position: absolute;
+}
+.deals9{
+    margin-left: -70px;
+    margin-top: -150px;
+}
+.deals2_3{
+    /* border: 1px solid black; */
+    width: 450px;
+    margin-left: 15px;
+}
+.deals5{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.deals5 img{
+    position: absolute;
+    display: flex;
+}
+.deals10{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.deals11{
+    /* border: 1px solid black; */
+    margin-left: 110px;
+    margin-top: -110px;
+}
+.deals12{
+    /* border: 1px solid black; */
+    margin-left: -60px;
+    margin-top: -5px;
+}
+.deal1{
+    margin-top: 40px;
+    width: 92vw;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.story-box1{
+    background-color: white;
+    border-radius: 10px;
+    width: 610px;
+    height: 200px;
+    display: flex;
+}
+.deal2{
+    width: 550px;
+    margin-left: 20px;
+}
+.deal2 h2{
+    /* border: 1px solid black; */
+    position: absolute;
+    margin-top: -10px;
+}
+.deal2 img{
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-top: -20px;
+}
+.deal5{
+    margin-left: 85px;
+    margin-top: -70px;
+}
+.deal6{
+    margin-left: -60px;
+    margin-top: -140px;
+}
+.deal8{
+    margin-left: 80px;
+    margin-top: 25px;
+}
+.deal7{
+    margin-left: -30px;
+}
+.deal9{
+    margin-left: -90px;
+    margin-top: -25px;
+}
+.deal10{
+    margin-left: -90px;
+    margin-top: -150px;
+}
+.deal11{
+    margin-left: -70px;
+    margin-top: -20px;
+}
+.deal12{
+    margin-left: 80px;
+    margin-top:  15px;
+}
+.deal13{
+    margin-left: -140px;
+    margin-top: -25px;
+}
 /* End of Deals */
 
 
@@ -109,11 +234,6 @@
 
 
 /* kfcappinfo */
-.mobile{
-    height: 14vh;
-    background-color: black;
-    /* position: absolute; */
-}
 .appinfo1{
     position: absolute;
     margin-left: 50px;
@@ -298,10 +418,11 @@
 
 
 
+
 /* Footer */
 .footer{
     background-color: #202329;
-    height: 450px;
+    height: 65vh;
 }
 .footermain{
     position: absolute;
@@ -346,7 +467,7 @@
 }
 .fkfc img{
     margin-top: 14px;
-    height: 400px;
+    height: 63vh;
     position: absolute;
 }
 .footerend{
@@ -356,18 +477,10 @@
     /* border: 1px solid black; */
     width: 85%;
     margin-left: 80px;
-    height: 450px;
+    height: 50ch;
 }
 .footerend p{
     color: #D9DBE1;
     font-size: 18px;
-}
-.pfont{
-    gap: 24px;
-}
-.fcont{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 /* End of Footer */
