@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 /* NavBar */
-*{
-    padding: 0%;
-    margin: 0%;
-}
 .navbar{
     background-color: #F22D2A;
     display: flex;
@@ -48,12 +39,12 @@
 
 /* Deals */
 .deals{
-    width: 100%; /* Set the width of the div */
-  height: 300px; /* Set the height of the div */
-  background-image: url('/Assets/image 32.png');
-  background-size: cover;
-  background-position: center;
+    background-image: url(/Assets/kfc\ back.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
     position: relative;
+    width: 100%;
 } 
 .deals1{
     /* border:  1px solid black; */
@@ -243,9 +234,6 @@
 
 
 /* kfcappinfo */
-/* .kfcapp{
-    position: absolute;
-} */
 .appinfo1{
     position: absolute;
     margin-left: 50px;
@@ -430,10 +418,11 @@
 
 
 
+
 /* Footer */
 .footer{
     background-color: #202329;
-    height: 450px;
+    height: 65vh;
 }
 .footermain{
     position: absolute;
@@ -478,7 +467,7 @@
 }
 .fkfc img{
     margin-top: 14px;
-    height: 400px;
+    height: 63vh;
     position: absolute;
 }
 .footerend{
@@ -488,18 +477,10 @@
     /* border: 1px solid black; */
     width: 85%;
     margin-left: 80px;
-    height: 450px;
+    height: 50ch;
 }
 .footerend p{
     color: #D9DBE1;
     font-size: 18px;
-}
-.pfont{
-    gap: 24px;
-}
-.fcont{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 /* End of Footer */
