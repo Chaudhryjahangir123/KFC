@@ -6,7 +6,7 @@ body, h1, h2, p {
 }
 
 body {
-    background-color: #4c0308;
+    background-color: #F22D2A;
     font-family: inter;
     color: #333;
 }
@@ -21,7 +21,7 @@ main {
     background-size: 27%, cover;
     background-blend-mode:overlay;
     background-repeat: no-repeat; 
-    background-color: rgba(102, 94, 94, 0.3);
+    background-color: rgba(255, 255, 255, 0.692);
     margin-top: 60px;
     display: flex;
     padding: 20px;
@@ -32,7 +32,7 @@ main {
 
 .about-section::before {
     content: '';
-    background-color: rgba(248, 231, 221, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@ main {
     margin-left: 80px;
     width: 450px;
     height: 150px;
-    background-color:#F22D2A;
+    background-color:#FFC71F;
     float: right;
     border-radius: 30px;
 }
@@ -75,7 +75,7 @@ main {
     border-radius: 5px;
     height: 300px;
     
-    background-color: rgba(248, 231, 221, 0.8);
+    background-color: rgba(255, 255, 255, 0.692);
 }
 .head{
     flex-direction: column;
@@ -85,13 +85,182 @@ main {
     width: 600px;
 }
 .head h1 {
-    margin-left: 20px; 
-    font-size: 26px; 
+    
+    margin-left: 10px; 
+    font-size: 40px; 
     margin-top: 0; 
 }
-.history-section p {
+.head p {
+    width:600px;
+    text-align: left;
     margin-left: 80px;
     font-size: 21px;
     margin-top: 10px;
+    font-weight: bolder;
 }
+
+
+/* footernav */
+.footernav{
+    height: 12vh;
+    background-color: #f02228;
+}
+.fobj{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    width: 94%;
+    height: 12vh;
+    color: white;
+}
+.fn1{
+    /* border: 1px solid black; */
+    width: 22%;
+    margin-left: 7%;
+}
+.fn2{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    width: 18%;
+}
+.fn2 img{
+    margin-top: 8px;
+    width: 48px;
+    height: 7vh;
+}
+.fn2 p,
+.fn3 p{
+    font-size: 20px;
+}
+.fn3{
+    width: 23%;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.fn3 img{
+    margin-top: 14px;
+    width: 35px;
+    height: 5vh;
+} 
+.fn4{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 20%;
+}
+/* End of footernav */
+
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: #202329;
+    height: 65vh;
+}
+.footermain{
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    width: 51%;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.footermain p{
+    font-size: 15px;
+    color: #D9DBE1;
+}
+.pfont p{
+    font-size: 25px;
+    color: white;
+}
+.footer-container{
+    position: relative;
+}
+.footer-input{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #544b4f;
+    border: 1px solid #202329;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+.submit-image{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+}
+.footer-input::placeholder {
+    color: white;
+}
+.fkfc{
+    display: flex;
+    justify-content: end;
+}
+.fkfc img{
+    margin-top: 14px;
+    height: 63vh;
+    position: absolute;
+}
+.footerend{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* border: 1px solid black; */
+    width: 85%;
+    margin-left: 80px;
+    height: 50ch;
+}
+.footerend p{
+    color: #D9DBE1;
+    font-size: 18px;
+}
+/* End of Footer */
+
+
+
+
+/* NavBar */
+.navbar{
+    background-color: #F22D2A;
+    display: flex;
+    height: 12vh;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.kfc{
+    /* border: 1px solid black; */
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 40%;
+}
+.left-items{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 32%;
+    font-size: 17px;
+    justify-content: space-evenly;
+}
+.right-items{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 10%;
+    justify-content: space-evenly;
+}
+.nav1{
+    margin-top: 8px;
+}
+/* End of Navbar */
 
