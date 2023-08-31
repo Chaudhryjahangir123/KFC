@@ -43,12 +43,12 @@
     height: 100vh;
 } 
 .deals1{
-    /* border:  1px solid black; */
+    border:  1px solid black;
     width: 90vw;
-    margin-left: 12vh;
+    margin-left: 78px;
     display: flex;
     justify-content: space-evenly;
-    height: 45vh;
+    height: 297px;
 }
   .story-box{
     background-color: white;
