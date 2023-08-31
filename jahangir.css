@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap');
 
-body, h1, h2, p {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,7 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 40px;
     background-image: url(Assets/kfclogo.png);
-    background-size: 27%, cover;
+    background-size: 30%, cover;
     background-blend-mode:overlay;
     background-repeat: no-repeat; 
     background-color: rgba(240, 14, 14, 0.692);
@@ -107,132 +107,6 @@ main {
     font-weight: bolder;
     color: white;
 }
-
-
-/* footernav */
-.footernav{
-    height: 12vh;
-    background-color: #f02228;
-}
-.fobj{
-    display: flex;
-    /* border: 1px solid black; */
-    align-items: center;
-    width: 94%;
-    height: 12vh;
-    color: white;
-}
-.fn1{
-    /* border: 1px solid black; */
-    width: 22%;
-    margin-left: 7%;
-}
-.fn2{
-    display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-    width: 18%;
-}
-.fn2 img{
-    margin-top: 8px;
-    width: 48px;
-    height: 7vh;
-}
-.fn2 p,
-.fn3 p{
-    font-size: 20px;
-}
-.fn3{
-    width: 23%;
-    display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-evenly;
-    margin-left: 40px;
-}
-.fn3 img{
-    margin-top: 14px;
-    width: 35px;
-    height: 5vh;
-} 
-.fn4{
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-around;
-    /* border: 1px solid black; */
-    width: 20%;
-}
-/* End of footernav */
-
-
-
-
-
-
-/* Footer */
-.footer{
-    background-color: #202329;
-    height: 65vh;
-}
-.footermain{
-    position: absolute;
-    display: flex;
-    margin-top: 40px;
-    /* border: 1px solid white; */
-    width: 51%;
-    justify-content: space-between;
-    margin-left: 80px;
-}
-.footermain p{
-    font-size: 15px;
-    color: #D9DBE1;
-}
-.pfont p{
-    font-size: 25px;
-    color: white;
-}
-.footer-container{
-    position: relative;
-}
-.footer-input{
-    padding: 10px;
-    font-size: 16px;
-    background-color: #544b4f;
-    border: 1px solid #202329;
-    border-radius: 5px;
-    padding-right: 40px;
-}
-.submit-image{
-    position: absolute;
-    top: 25%;
-    right: 10px;
-    cursor: pointer;
-}
-.footer-input::placeholder {
-    color: white;
-}
-.fkfc{
-    display: flex;
-    justify-content: end;
-}
-.fkfc img{
-    margin-top: 14px;
-    height: 63vh;
-    position: absolute;
-}
-.footerend{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    /* border: 1px solid black; */
-    width: 85%;
-    margin-left: 80px;
-    height: 50ch;
-}
-.footerend p{
-    color: #D9DBE1;
-    font-size: 18px;
-}
-/* End of Footer */
 
 
 
