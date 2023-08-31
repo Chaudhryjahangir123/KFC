@@ -1,0 +1,10 @@
+body{
+    background-color: #FFB737;
+}
+nav{
+    width: 95%;
+    background-color: #FF4029;
+    border-radius: 100px;
+    margin: auto;
+    height: 100px;
+}
