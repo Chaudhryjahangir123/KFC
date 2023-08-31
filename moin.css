@@ -1,8 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap%27);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
 /* NavBar */
 .navbar{
-    background-color: #F22D2A;
+    background-color: red;
     display: flex;
-    height: 12vh;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+
 }
 .navbar a{
     text-decoration: none;
@@ -10,28 +20,32 @@
 }
 .kfc{
     /* border: 1px solid black; */
-    margin-left: 120px;
-    margin-top: 20px;
+
     width: 40%;
 }
 .left-items{
     display: flex;
-    /* border: 1px solid black; */
-    margin-top: 20px;
-    width: 32%;
+    align-items: center;
     font-size: 17px;
+    gap: 80px;
     justify-content: space-evenly;
 }
 .right-items{
     display: flex;
-    /* border: 1px solid black; */
-    margin-top: 20px;
-    width: 10%;
+    gap: 20px;
+    align-items: center;
     justify-content: space-evenly;
 }
-.nav1{
-    margin-top: 8px;
+.rimg1 img{
+    width: 63px;
+    margin-top: 4px;
+    height: 63px;
 }
+.nav1{
+
+    margin-top: 10px;
+}
+
 /* End of Navbar */
 
 
@@ -40,10 +54,10 @@
 /* Deals */
 .deals{
     background-image: url(/Assets/kfc\ back.png);
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
+    background-repeat: no-repeat;
+    height: 900px;
     position: relative;
+    background-size: 900px 100%;
     width: 100%;
 } 
 .deals1{
@@ -227,6 +241,9 @@
     margin-left: -140px;
     margin-top: -25px;
 }
+.deals{
+    height: 800px;
+}
 /* End of Deals */
 
 
@@ -234,6 +251,29 @@
 
 
 /* kfcappinfo */
+.appinfo{
+    z-index: 2;
+    position: absolute ;
+    background-color: none;
+    width: 500px;
+}
+.phone1{
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+}
+.phone2{
+    position: absolute;
+    bottom: -430px;
+    z-index: 2;
+
+}
+.kfcapp{
+    background-color: #FFB737;
+    height: 350px;
+    z-index: 2;
+    position: relative;
+}
 .appinfo1{
     position: absolute;
     margin-left: 50px;
@@ -249,16 +289,12 @@
     margin-left: 50px;
 }
 .appinfo{
-    height: 52vh;
-    background: linear-gradient(262.18deg, #FFB737 -0.11%, #FFBE4B 97.74%);
     display: flex;
-    margin-top: -400px;
+    margin-top: -300px;
+    left: 50%;
     /* border: 1px solid black; */
 }
-.appinfo3{
-    margin-left: 560px;
-    margin-top: 40px;
-}
+
 .appinfo3 h1{
     font-size: 40px;
     color: white;
@@ -362,56 +398,26 @@
 
 /* footernav */
 .footernav{
-    height: 12vh;
+    height: 120px;
     background-color: #f02228;
 }
 .fobj{
     display: flex;
     /* border: 1px solid black; */
     align-items: center;
-    width: 94%;
-    height: 12vh;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+
+    height: 120px;
     color: white;
 }
-.fn1{
-    /* border: 1px solid black; */
-    width: 22%;
-    margin-left: 7%;
-}
-.fn2{
+.fn{
     display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-    width: 18%;
+    align-items: center;
+    gap: 30px;
 }
-.fn2 img{
-    margin-top: 8px;
-    width: 48px;
-    height: 7vh;
-}
-.fn2 p,
-.fn3 p{
-    font-size: 20px;
-}
-.fn3{
-    width: 23%;
-    display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-evenly;
-    margin-left: 40px;
-}
-.fn3 img{
-    margin-top: 14px;
-    width: 35px;
-    height: 5vh;
-} 
-.fn4{
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-around;
-    /* border: 1px solid black; */
-    width: 20%;
-}
+
 /* End of footernav */
 
 
@@ -422,7 +428,7 @@
 /* Footer */
 .footer{
     background-color: #202329;
-    height: 65vh;
+    height: 450px;
 }
 .footermain{
     position: absolute;
@@ -467,7 +473,7 @@
 }
 .fkfc img{
     margin-top: 14px;
-    height: 63vh;
+    height: 400px;
     position: absolute;
 }
 .footerend{
@@ -477,10 +483,18 @@
     /* border: 1px solid black; */
     width: 85%;
     margin-left: 80px;
-    height: 50ch;
+    height: 450px;
 }
 .footerend p{
     color: #D9DBE1;
     font-size: 18px;
+}
+.pfont{
+    gap: 24px;
+}
+.fcont{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 /* End of Footer */
