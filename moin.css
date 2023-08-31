@@ -53,13 +53,13 @@
   .story-box{
     background-color: white;
     border-radius: 10px;
-    width: 28vw;
-    height: 30vh;
+    width: 400px;
+    height: 220px;
     margin-top: 60px;
     display: flex;
   }
 .deals3{
-    width: 30vw;
+    width: 400px;
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
 .deals2_1{
     /* border: 1px solid black; */
     width: 30vw;
-    margin-left: 2vw;
+    margin-left: 25px;
 }
 .deals7{
     /* border: 1px solid black; */
