@@ -76,7 +76,7 @@ for (let index = 0; index < cardno; index++) {
     imgs.style.width='300px'
     imgs.style.height='250px'
     imgs.style.marginBottom='30px'
-    imgs.style.marginTop='-9px'
+    imgs.style.marginTop='-13px'
 
 
 
