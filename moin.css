@@ -43,8 +43,8 @@
     height: 100vh;
 } 
 .deals1{
-    border:  1px solid black;
-    width: 86vw;
+    /* border:  1px solid black; */
+    width: 90vw;
     margin-left: 12vh;
     display: flex;
     justify-content: space-evenly;
@@ -53,12 +53,40 @@
   .story-box{
     background-color: white;
     border-radius: 10px;
-    width: 26vw;
-    height: 25vh;
+    width: 28vw;
+    height: 30vh;
     margin-top: 60px;
+    display: flex;
   }
+.deals3{
+    width: 30vw;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+.deals3 img{
+    position: absolute;
+    display: flex;
 
-
+}
+.deals8{
+    /* border: 1px solid black; */
+    margin-left: -38px;
+}
+.deals6{
+    display: flex;
+    align-items: center;
+}
+.deals2_1{
+    /* border: 1px solid black; */
+    width: 30vw;
+    margin-left: 2vw;
+}
+.deals7{
+    /* border: 1px solid black; */
+    margin-left: 110px;
+    margin-top: -110px;
+}
 
 
 
