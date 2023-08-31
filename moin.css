@@ -1,4 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* NavBar */
+*{
+    padding: 0%;
+    margin: 0%;
+}
 .navbar{
     background-color: #F22D2A;
     display: flex;
@@ -421,11 +430,10 @@
 
 
 
-
 /* Footer */
 .footer{
     background-color: #202329;
-    height: 65vh;
+    height: 450px;
 }
 .footermain{
     position: absolute;
@@ -470,7 +478,7 @@
 }
 .fkfc img{
     margin-top: 14px;
-    height: 63vh;
+    height: 400px;
     position: absolute;
 }
 .footerend{
@@ -480,10 +488,18 @@
     /* border: 1px solid black; */
     width: 85%;
     margin-left: 80px;
-    height: 50ch;
+    height: 450px;
 }
 .footerend p{
     color: #D9DBE1;
     font-size: 18px;
+}
+.pfont{
+    gap: 24px;
+}
+.fcont{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 /* End of Footer */

@@ -34,11 +34,13 @@ for (let index = 0; index < cardno; index++) {
     cont.style.width='90%'
     
     
-    
+    cont.style.height="80px"
     container.appendChild(card)
     card.style.display='flex'
     ptag.style.display='flex'
     ptag.style.alignItems='center'
+    ptag.style.marginTop='20px'
+
     ptag.style.justifyContent='space-around'
     pr.style.color='black'
     pr.style.fontSize='24px'
@@ -47,18 +49,19 @@ for (let index = 0; index < cardno; index++) {
 
 
 
-    card.style.backgroundColor='white'
+    card.style.backgroundColor='rgba(255, 255, 255, 0.35)'
     cname.style.fontSize='24px'
     cont.style.fontSize='20px'
     
     card.style.flexDirection='column'
     card.style.alignItems='center'
     card.style.justifyContent='center'
-    card.style.gap='10px'
     card.style.width= "324.392px";
+    card.style.gap= "10px";
     ptag.style.width= "100%";
 
     card.style.height= "513.968px";
+
     card.style.borderRadius= "50px";
     button.style.width= "120px";
     button.style.height= "40px";
@@ -71,6 +74,16 @@ for (let index = 0; index < cardno; index++) {
 
     
     imgs.style.width='300px'
+    imgs.style.height='250px'
+    imgs.style.marginBottom='30px'
+    imgs.style.marginTop='-13px'
+
+
+
+    imgs.style.borderRadius='50px'
+    imgs.style.backgroundColor='red'
+
+
 
     
     
