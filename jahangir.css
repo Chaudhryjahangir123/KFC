@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap');
-
-  body, h1, h2, p {
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: inter ;
-    color: #333; 
+    font-family: inter;
+    color: #333;
 }
 
 .abt {
@@ -19,56 +18,80 @@ body {
     justify-content: center;
     align-items: center;
 }
-.abt h1{
+
+.abt h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     display: flex;
     justify-content: center;
 }
+
 main {
     padding: 20px;
 }
 
 .about-section {
-    background: url(Assets/kfclogo.png), lightgray 50%; 
+    background-image: url(Assets/kfclogo.png);
+    background-size: 27%, cover;
+    background-blend-mode:overlay;
+    background-repeat: no-repeat; 
+    background-color: rgba(248, 231, 221, 0.3);
     margin-top: 60px;
     display: flex;
     padding: 20px;
     border-radius: 5px;
     height: 300px;
+    position: relative;
 }
 
-.about-section p{
+.about-section::before {
+    content: '';
+    background-color: rgba(248, 231, 221, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -1; 
+}
+
+.about-section p {
+    font-weight: bolder;
     margin-top: 25px;
     width: 750px;
-    font-size:26px;
+    font-size: 26px;
 }
-.red{
+
+.red {
     margin-top: 48px;
     margin-left: 80px;
-width: 450px;
-height: 150px;
-background-color: #FF4029;
-float: right;
-border-radius: 30px;
+    width: 450px;
+    height: 150px;
+    background-color: #FF4029;
+    float: right;
+    border-radius: 30px;
 }
-.red p{
-    
+
+.red p {
     font-weight: bolder;
     margin-top: 30px;
     font-size: 19px;
     font-family: poppins;
-    width:450px ;
+    width: 450px;
     color: white;
     text-align: center;
 }
+
 footer {
     background-color: #FF4029;
     color: white;
     text-align: center;
     padding: 10px;
 }
+
 .history-section {
+    display: flex;
     margin-top: 60px;
     display: flex;
     background-color: #F8E7DD;
@@ -76,8 +99,15 @@ footer {
     border-radius: 5px;
     height: 300px;
 }
-.history-section p{
+.history-section h2 {
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 26px;
+}
+.history-section p {
     margin-top: 25px;
     width: 750px;
-    font-size:26px;
+    font-size: 17px;
 }
+
