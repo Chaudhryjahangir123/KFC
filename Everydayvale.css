@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap%27);
+*{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #f22d2a;
+}
+.evevalue{
+    width: 85%;
+    border-radius: 100px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+nav button{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background:#ff4029;
+    border: none;
+    color: white;
+    font-size: large;
+}
+.Everydayvalue1{
+    border: 2px solid white;
+}
+.header{
+    font-weight: 400;
+    align-items: center;
+    font-size: 42px;
+    width: 85%;
+    justify-content: space-around;
+    color: white;
+    padding:0 20px;
+    display: flex;
+    margin: auto;
+}
+.line{
+    width: 950px;
+    height: 0;
+    margin-top: 10px;
+    border: 3px solid #ff4029;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
