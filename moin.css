@@ -237,7 +237,7 @@
 .appinfo1{
     position: absolute;
     margin-left: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .appinfo2{
     /* border: 1px solid black; */
