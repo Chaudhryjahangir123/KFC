@@ -49,7 +49,7 @@ for (let index = 0; index < cardno; index++) {
 
 
 
-    card.style.backgroundColor='white'
+    card.style.backgroundColor='rgba(255, 255, 255, 0.35)'
     cname.style.fontSize='24px'
     cont.style.fontSize='20px'
     
@@ -58,7 +58,6 @@ for (let index = 0; index < cardno; index++) {
     card.style.justifyContent='center'
     card.style.width= "324.392px";
     card.style.gap= "10px";
-
     ptag.style.width= "100%";
 
     card.style.height= "513.968px";
