@@ -49,7 +49,7 @@ for (let index = 0; index < cardno; index++) {
 
 
 
-    card.style.backgroundColor='rgba(255, 255, 255, 0.35)'
+    card.style.backgroundColor='white'
     cname.style.fontSize='24px'
     cont.style.fontSize='20px'
     

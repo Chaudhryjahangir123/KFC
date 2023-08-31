@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+*{
+    font-family:  'Inter', sans-serif;
+}
 /* NavBar */
 .navbar{
     background-color: #F22D2A;
@@ -39,7 +43,7 @@
 
 /* Deals */
 .deals{
-    background-image: url(/Assets/kfc\ back.png);
+    background-image: url(Assets/kfc\ back.png);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -81,6 +85,7 @@
 .deals6{
     display: flex;
     align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 .deals2_1{
     /* border: 1px solid black; */
@@ -88,6 +93,7 @@
     margin-left: 25px;
 }
 .deals7{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     /* border: 1px solid black; */
     margin-left: 110px;
     margin-top: -110px;
@@ -101,20 +107,21 @@
     background-color: #ffc71f;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
 }
 .deals2_1 h2{
     background-color: #f73d27;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
 }
 .deals2_3 h2{
     background-color: #f73d27;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
 }
+
 .story-box_1{
     background-color: #F22D2A;
     border-radius: 10px;
@@ -137,6 +144,18 @@
     /* border: 1px solid black; */
     width: 450px;
     margin-left: 15px;
+}
+.deals2_3 p{
+    font-weight: bold;
+}
+.deals2_2 p{
+    font-weight: bold;
+}
+.deals2_1 p{
+    font-weight: bold;
+}
+.deal2 p{
+    font-weight: bold;
 }
 .deals5{
     display: flex;
@@ -180,7 +199,7 @@
 }
 .deal2{
     width: 550px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .deal2 h2{
     /* border: 1px solid black; */
@@ -243,6 +262,7 @@
     /* border: 1px solid black; */
     margin-left: 185px;
     width: max-content;
+    
 }
 .appinfo2 img{
     margin-top: 40px;

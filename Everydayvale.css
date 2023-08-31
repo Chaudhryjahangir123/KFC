@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    background-color: #f22d2a;
+    background-color: red;
 }
 .evevalue{
     width: 85%;
@@ -36,7 +36,7 @@ nav button{
     font-size: 42px;
     width: 85%;
     justify-content: space-around;
-    color: white;
+    color:white;
     padding:0 20px;
     display: flex;
     margin: auto;
@@ -58,15 +58,15 @@ nav button{
 
 
 .navbar{
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: red;
     display: flex;
     height: 120px;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    margin: 10px auto;
+    width: 100%;
+    
     gap: 20px;
-    border-radius: 100px;
+    
 
 }
 .navbar a{
