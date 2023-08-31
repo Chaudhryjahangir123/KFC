@@ -94,14 +94,14 @@ main {
 }
 .head h1 {
     color: white;
-    margin-left: 10px; 
+    margin-left: -250px; 
     font-size: 40px; 
     margin-top: 0; 
 }
 .head p {
     width:600px;
     text-align: left;
-    margin-left: 80px;
+    margin-left: 50px;
     font-size: 21px;
     margin-top: 10px;
     font-weight: bolder;
