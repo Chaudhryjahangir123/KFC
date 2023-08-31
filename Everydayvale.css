@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap%27);
 *{
-    color: black;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -56,3 +55,104 @@ nav button{
     justify-content: center;
     margin: 50px 0px;
 }
+
+
+.navbar{
+    background-color: #F22D2A;
+    display: flex;
+    height: 12vh;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.kfc{
+    /* border: 1px solid black; */
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 40%;
+}
+.left-items{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 32%;
+    font-size: 17px;
+    justify-content: space-evenly;
+}
+.right-items{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    width: 10%;
+    justify-content: space-evenly;
+}
+.nav1{
+    margin-top: 8px;
+}
+
+/* Footer */
+.footer{
+    background-color: #202329;
+    height: 550px;
+}
+.footermain{
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    width: 51%;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.footermain p{
+    font-size: 15px;
+    color: #D9DBE1;
+}
+.pfont p{
+    font-size: 25px;
+    color: white;
+}
+.footer-container{
+    position: relative;
+}
+.footer-input{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #544b4f;
+    border: 1px solid #202329;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+.submit-image{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+}
+.footer-input::placeholder {
+    color: white;
+}
+.fkfc{
+    display: flex;
+    justify-content: end;
+}
+.fkfc img{
+    margin-top: 14px;
+    height: 500px;
+    position: absolute;
+}
+.footerend{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* border: 1px solid black; */
+    width: 85%;
+    margin-left: 80px;
+    height: 550px;
+}
+.footerend p{
+    color: #D9DBE1;
+    font-size: 18px;
+}
+/* End of Footer */
