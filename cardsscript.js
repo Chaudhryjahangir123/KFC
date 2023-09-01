@@ -17,6 +17,7 @@ for (let index = 0; index < cardno; index++) {
 
     card.setAttribute('id', `card${index + 1}`);
     imgs.src=loi[index]
+
     card.appendChild(imgs)
     card.appendChild(cname)
     card.appendChild(cont)
@@ -86,5 +87,28 @@ for (let index = 0; index < cardno; index++) {
 
 
     
-    
+    listofcards.push(card); 
 }
+console.log(listofcards)
+
+
+function enter(card) {
+    var clickedCard = card.target; 
+    clickedCard.style.transform ="scale(1.05 )"
+    clickedCard.style.boxShadow="5px 5px 15px grey"
+
+
+} 
+
+function leave(card) {
+var clickedCard = card.target; 
+clickedCard.style.transform ="scale(1)"
+clickedCard.style.boxShadow="0px 0px 0px"
+
+}   
+
+listofcards.forEach(function(card) {
+card.addEventListener("mouseenter", enter);
+card.addEventListener("mouseleave", leave);
+
+});
