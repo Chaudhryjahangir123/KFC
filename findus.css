@@ -82,8 +82,8 @@ padding-top: 151px;
 
 .locationone{
     position: absolute;
-    width: 450px;
-height: 400px;
+    width: 400px;
+height: 420px;
 flex-shrink: 0;
 top: 345px;
 left: 50px;
@@ -95,11 +95,11 @@ box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
 }
 .locationtwo{
     position: absolute;
-    width: 450px;
-height: 400px;
+    width: 400px;
+height: 420px;
 flex-shrink: 0;
 top: 345px;
-left: 527px;
+left: 480px;
 
 
 border-radius: 12px;
@@ -109,11 +109,11 @@ box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
 }
 .locationthird{
     position: absolute;
-    width: 450px;
-height: 400px;
+    width: 400px;
+height: 420px;
 flex-shrink: 0;
 top: 345px;
-left: 1000px;
+left: 912px;
 
 
 border-radius: 12px;
@@ -270,7 +270,7 @@ padding-left:25px ;
     align-items: center;
     /* border: 1px solid black; */
     gap: 15px;
-    width: 18%;
+    width: 20%;
 }
 .fn2 img{
     
