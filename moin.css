@@ -76,6 +76,8 @@
     margin-top: 60px;
     display: flex;
     /* border: 1px solid black; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
   }
 .deals3{
     width: 400px;
@@ -100,6 +102,7 @@
     /* border: 1px solid black; */
     width: 410px;
     margin-left: 25px;
+    margin-top: 25px;
 }
 .deals7{
     /* border: 1px solid black; */
@@ -110,24 +113,28 @@
     /* border: 1px solid black; */
     width: 500px;
     margin-left: 15px;
+    margin-top: 25px;
 }
 .deals2_2 h2{
     background-color: #ffc71f;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
+    margin-top: 10px;
 }
 .deals2_1 h2{
     background-color: #f73d27;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
+    margin-top: 10px;
 }
 .deals2_3 h2{
     background-color: #f73d27;
     border-radius: 40px;
     padding: 10px;
-    width: 120px;
+    width: 130px;
+    margin-top: 10px;
 }
 .story-box_1{
     background-color: #F22D2A;
@@ -137,6 +144,7 @@
     margin-top: 60px;
     display: flex;
     /* border: 1px solid black; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
 .deals4{
     margin-left: 215px;
@@ -151,6 +159,8 @@
     /* border: 1px solid black; */
     width: 450px;
     margin-left: 15px;
+    margin-top: 25px;
+    
 }
 .deals5{
     display: flex;
@@ -191,22 +201,27 @@
     width: 610px;
     height: 200px;
     display: flex;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
 }
 .deal2{
+    /* border: 1px solid black; */
     width: 550px;
     margin-left: 20px;
+    margin-top: 15px;
 }
 .deal2 h2{
     /* border: 1px solid black; */
     position: absolute;
-    margin-top: -10px;
+    margin-top: 0px;
 }
 .deal2 img{
     /* border: 1px solid black; */
     margin-left: 50px;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 .deal5{
+    /* border: 1px solid black; */
     margin-left: 85px;
     margin-top: -70px;
 }
@@ -222,11 +237,11 @@
     margin-left: -30px;
 }
 .deal9{
-    margin-left: -90px;
+    margin-left: -80px;
     margin-top: -25px;
 }
 .deal10{
-    margin-left: -90px;
+    margin-left: -84px;
     margin-top: -150px;
 }
 .deal11{
