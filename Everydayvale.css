@@ -22,10 +22,11 @@ nav button{
     width: 200px;
     height: 50px;
     border-radius: 15px;
-    background:#ff4029;
+    background: #ffb737;;
     border: none;
     color: white;
-    font-size: large;
+    font-size: 17px;
+    font-weight: 700;
 }
 #Everydayvalue{
     border: 2px solid white;
