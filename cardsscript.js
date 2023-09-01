@@ -8,7 +8,9 @@ var price =["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 5
 for (let index = 0; index < cardno; index++) {
     var ptag= document.createElement("div")
     var card = document.createElement("div")
+    var imgcont= document.createElement("div")
     var imgs= document.createElement("img")
+
     var cname = document.createElement("p")
     var cont = document.createElement("p")
     var button = document.createElement("button")
@@ -17,14 +19,14 @@ for (let index = 0; index < cardno; index++) {
 
     card.setAttribute('id', `card${index + 1}`);
     imgs.src=loi[index]
-
-    card.appendChild(imgs)
+    card.appendChild(imgcont)
     card.appendChild(cname)
     card.appendChild(cont)
     card.appendChild(ptag)
     ptag.appendChild(pr)
     ptag.appendChild(button)
     button.appendChild(bcon)
+    imgcont.appendChild(imgs)
     bcon.innerHTML= "Add to Bucket";
     pr.innerHTML=price[index]
     cont.innerHTML=content[index]
@@ -76,13 +78,21 @@ for (let index = 0; index < cardno; index++) {
     
     imgs.style.width='300px'
     imgs.style.height='250px'
-    imgs.style.marginBottom='30px'
-    imgs.style.marginTop='-13px'
+    imgcont.style.marginBottom='30px'
+    imgcont.style.marginTop='-13px'
 
 
 
-    imgs.style.borderRadius='50px'
-    imgs.style.backgroundColor='red'
+    imgcont.style.borderRadius='50px'
+    imgcont.style.backgroundColor='red'
+    imgcont.style.width='300px'
+    imgcont.style.height='250px'
+    imgcont.style.display='flex'
+    imgcont.style.alignItems='center'
+
+
+
+
 
 
 
@@ -91,24 +101,28 @@ for (let index = 0; index < cardno; index++) {
 }
 console.log(listofcards)
 
-
 function enter(card) {
-    var clickedCard = card.target; 
-    clickedCard.style.transform ="scale(1.05 )"
-    clickedCard.style.boxShadow="5px 5px 15px grey"
+    var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
+    var selectedimg = clickedCard.getElementsByTagName("img")[0]; // Get the image element inside the card
+
+    clickedCard.style.transform = "scale(1.05)";
+    selectedimg.style.transform = "scale(1.2)";
+    selectedimg.style.padding = "scale(1.1)";
 
 
-} 
+    clickedCard.style.boxShadow = "5px 5px 15px grey";
+}
 
 function leave(card) {
-var clickedCard = card.target; 
-clickedCard.style.transform ="scale(1)"
-clickedCard.style.boxShadow="0px 0px 0px"
+    var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
+    var selectedimg = clickedCard.getElementsByTagName("img")[0]; // Get the image element inside the card
 
-}   
+    clickedCard.style.transform = "scale(1)";
+    clickedCard.style.boxShadow = "0px 0px 0px";
+    selectedimg.style.transform = "scale(1)";
+}
 
 listofcards.forEach(function(card) {
-card.addEventListener("mouseenter", enter);
-card.addEventListener("mouseleave", leave);
-
+    card.addEventListener("mouseenter", enter);
+    card.addEventListener("mouseleave", leave);
 });
