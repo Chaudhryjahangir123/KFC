@@ -27,7 +27,7 @@ nav button{
     color: white;
     font-size: large;
 }
-.Everydayvalue1{
+#Everydayvalue{
     border: 2px solid white;
 }
 .header{
@@ -46,8 +46,9 @@ nav button{
     height: 0;
     margin-top: 10px;
     border: 3px solid #FFB737;
+    cursor: cell;
 }
-#container{
+#container1{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -55,7 +56,58 @@ nav button{
     justify-content: center;
     margin: 50px 0px;
 }
+#container2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    display: none;
 
+}
+#container3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    display: none;
+
+
+}
+#container4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    display: none;
+
+}
+#container5{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    display: none;
+
+}
+#container6{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+
+    display: none;
+
+}
 
 .navbar{
     background-color: red;
