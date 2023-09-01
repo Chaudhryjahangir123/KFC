@@ -19,8 +19,8 @@ main {
 }
 
 .about-section {
-    margin-left: 75px;
-    width: 1300px;
+    margin-left: 35px;
+    width: 1250px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     border-radius: 40px;
     background-image: url(Assets/kfclogo.png);
@@ -77,8 +77,8 @@ main {
     text-align: center;
 }
 .history-section {
-    margin-left: 75px;
-    width: 1300px;
+    margin-left: 35px;
+    width: 1250px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     display: flex;
     margin-top: 60px;
@@ -153,4 +153,108 @@ main {
     margin-top: 8px;
 }
 /* End of Navbar */
+
+
+/* footernav */
+.footernav{
+    height: 120px;
+    background-color: #f02228;
+}
+.fobj{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+
+    height: 120px;
+    color: white;
+}
+.fn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* End of footernav */
+
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: #202329;
+    height: 450px;
+}
+.footermain{
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    /* border: 1px solid white; */
+    width: 51%;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.footermain p{
+    font-size: 15px;
+    color: #D9DBE1;
+}
+.pfont p{
+    font-size: 25px;
+    color: white;
+}
+.footer-container{
+    position: relative;
+}
+.footer-input{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #544b4f;
+    border: 1px solid #202329;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+.submit-image{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+}
+.footer-input::placeholder {
+    color: white;
+}
+.fkfc{
+    display: flex;
+    justify-content: end;
+}
+.fkfc img{
+    margin-top: 14px;
+    height: 400px;
+    position: absolute;
+}
+.footerend{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* border: 1px solid black; */
+    width: 85%;
+    margin-left: 80px;
+    height: 450px;
+}
+.footerend p{
+    color: #D9DBE1;
+    font-size: 18px;
+}
+.pfont{
+    gap: 24px;
+}
+.fcont{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/* End of Footer */
 
