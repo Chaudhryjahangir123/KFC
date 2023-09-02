@@ -7,12 +7,11 @@
 
 /* NavBar */
 .navbar{
-    background-color: red;
+    background-color:  #f31a1a;
     display: flex;
     height: 120px;
     align-items: center;
     justify-content: center;
-
 }
 .navbar a{
     text-decoration: none;
