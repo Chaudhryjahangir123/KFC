@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    background-color: red;
+    background-color: #f02228;
 }
 .evevalue{
     width: 85%;
@@ -30,6 +30,9 @@ nav button{
 }
 #Everydayvalue{
     border: 2px solid white;
+}
+.evevalue button{
+    cursor: pointer;
 }
 .header{
     font-weight: 400;
@@ -111,15 +114,16 @@ nav button{
 }
 
 .navbar{
-    background-color: red;
+    background-color: #f02228;
+    box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
     display: flex;
     height: 120px;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    
     
     gap: 20px;
-    
+   
 
 }
 .navbar a{
@@ -147,11 +151,16 @@ nav button{
 .rimg1 img{
     width: 63px;
     margin-top: 4px;
+    
     height: 63px;
 }
 .nav1{
 
     margin-top: 10px;
+}
+.rimg2{
+    border-radius: 100%;
+    box-shadow: 0px 2.5px 0.5px  #202329;
 }
 
 /* Footer */
