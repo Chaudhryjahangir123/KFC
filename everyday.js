@@ -75,6 +75,7 @@ for (let index = 0; index < cardno; index++) {
     button.style.backgroundColor= "#FFB737";
     button.style.border= "none";
     button.style.color= "white";
+    
     button.style.fontSize= "14px";
 
 

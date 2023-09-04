@@ -31,6 +31,9 @@ nav button{
 #Everydayvalue{
     border: 2px solid white;
 }
+.evevalue button{
+    cursor: pointer;
+}
 .header{
     font-weight: 400;
     align-items: center;
