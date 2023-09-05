@@ -8,6 +8,9 @@ var loi=['./everyday/bur.png','./everyday/bg1.png','./everyday/bg2.png','./every
 var content=['Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch + 1 regular Fries + 1 regular Drink','2 pieces of Hot and Crispy Fried Chicken+ fries+ dinner roll+ signature Vietnamese Sauce','3 pieces of Hot and Crispy Fried Chicken','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun','Spiced and buttery rice with 6 pcs of Hot Shots topped with our signature Vietnamese sauce']
 var listofcards=[]
 var price =["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560"]
+
+
+
 for (let index = 0; index < cardno; index++) {
     var ptag= document.createElement("div")
     var card = document.createElement("div")
@@ -36,6 +39,8 @@ for (let index = 0; index < cardno; index++) {
     cname.innerHTML=heads[index]
     cname.style.color='black'
     cont.style.color='black'
+    cont.style.color='black'
+
     cont.style.textAlign='center'
     cont.style.width='90%'
     
@@ -61,6 +66,9 @@ for (let index = 0; index < cardno; index++) {
     
     card.style.flexDirection='column'
     card.style.alignItems='center'
+    
+
+
     card.style.justifyContent='center'
     card.style.width= "324.392px";
     card.style.gap= "10px";
@@ -80,8 +88,8 @@ for (let index = 0; index < cardno; index++) {
 
 
     
-    imgs.style.width='300px'
-    imgs.style.height='250px'
+    imgs.style.width='250px'
+    imgs.style.height='225px'
     imgcont.style.marginBottom='30px'
     imgcont.style.marginTop='-13px'
 
@@ -93,6 +101,8 @@ for (let index = 0; index < cardno; index++) {
     imgcont.style.height='250px'
     imgcont.style.display='flex'
     imgcont.style.alignItems='center'
+    imgcont.style.justifyContent='center'
+
 
 
 
@@ -130,15 +140,26 @@ function leave(card) {
     selectedimg.style.transform = "scale(1)";
 }
 
+// var cardinfo = document.createElement("div")
+// cardinfo.style.backgroundColor='blue'
+// cardinfo.style.height='1200px'
+// container.appendChild(cardinfo)
+
+
+
+
+function hide(card) {
+    var clickedCard = card.currentTarget;
+    var sherryContainer = clickedCard.closest('#container1'); // Assuming the container has a class of "container"
+    sherryContainer.style.display = "none";
+  }
+
+
 listofcards.forEach(function(card) {
     card.addEventListener("mouseenter", enter);
     card.addEventListener("mouseleave", leave);
-});
-
-
-
-
-
+    card.addEventListener("click",hide);
+});    
 
 
 
@@ -609,6 +630,7 @@ function leave(card) {
     selectedimg.style.transform = "scale(1)";
 }
 
+
 listofcards5.forEach(function (card) {
     card.addEventListener("mouseenter", enter);
     card.addEventListener("mouseleave", leave);
@@ -867,3 +889,12 @@ function mnightpage() {
 }
 
 mnightbtn.addEventListener("click",mnightpage)
+
+
+
+container.style.backgroundColor="rgba(245, 0, 0, 0.8)"
+container2.style.backgroundColor="rgba(245, 0, 0, 0.8)"
+container3.style.backgroundColor="rgba(245, 0, 0, 0.8)"
+container4.style.backgroundColor="rgba(245, 0, 0, 0.8)"
+container6.style.backgroundColor="rgba(245, 0, 0, 0.8)"
+container5.style.backgroundColor="rgba(245, 0, 0, 0.8)"
