@@ -4,18 +4,14 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-body{
-    background-color: rgba(245, 0, 0, 0.8);
-}
+
 .evevalue{
-    width: 85%;
-    border-radius: 100px;
-    margin: auto;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    background-color: rgba(245, 0, 0, 0.8);
 
 }
 nav button{
@@ -30,20 +26,22 @@ nav button{
 }
 #Everydayvalue{
     border: 2px solid white;
+    
 }
 .evevalue button{
     cursor: pointer;
 }
 .header{
+    background-color: rgba(245, 0, 0, 0.8);
+
     font-weight: 400;
     align-items: center;
     font-size: 30px;
-    width: 90%;
     justify-content: space-around;
     color:white;
     padding:0 20px;
     display: flex;
-    margin: auto;
+    margin: 0;
 }
 .line{
     width: 950px;
@@ -58,7 +56,7 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
+    padding-top: 50px;
 }
 #container2{
     display: flex;
@@ -66,8 +64,8 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
     display: none;
+    padding-top: 50px;
 
 }
 #container3{
@@ -76,8 +74,8 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
     display: none;
+    padding-top: 50px;
 
 
 }
@@ -87,8 +85,8 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
     display: none;
+    padding-top: 50px;
 
 }
 #container5{
@@ -97,8 +95,8 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
     display: none;
+    padding-top: 50px;
 
 }
 #container6{
@@ -107,7 +105,7 @@ nav button{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px;
+    padding-top: 50px;
 
     display: none;
 
