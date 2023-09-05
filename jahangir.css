@@ -27,7 +27,7 @@ main {
     background-size: 30%, cover;
     background-blend-mode:overlay;
     background-repeat: no-repeat; 
-    background-color: rgba(240, 14, 14, 0.692);
+    background-color: rgba(245, 0, 0, 0.8);
     margin-top: 60px;
     display: flex;
     padding: 20px;
@@ -38,7 +38,7 @@ main {
 
 .about-section::before {
     content: '';
-    background-color: rgba(245, 0, 0, 0.8);
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -152,22 +152,26 @@ main {
     margin-left: 35px;
     padding: 30px 40px;
     background-color: rgba(245, 0, 0, 0.8);
-    height: 789px;
-    width: 1200px;
+    height: 600px;
+    width: 1310px;
     margin-bottom: 40px;
     text-align: center;
     margin-top: 50px;
+    padding-top: 10px;
+    
 }
 .abpng p{
     color: white;
     font-family: inter;
     font-weight: bold;
     font-size: 20px;
+    padding-top: 30px;
 }
-.abpng img{
+.abpngimg{
     
-    width: 1000px;
-    height: 500px;
+    width: 772px;
+    height: 429px;
+    padding-top: 10px;
 }
 .first2{
     
@@ -252,13 +256,17 @@ main {
     
 
 }
-/* NavBar */
 .navbar{
-    background-color:rgba(245, 0, 0, 0.8);
+    background-color: rgba(245, 0, 0, 0.8);
+    box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
     display: flex;
     height: 120px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
+    
+    gap: 20px;
+   
 
 }
 .navbar a{
@@ -286,14 +294,17 @@ main {
 .rimg1 img{
     width: 63px;
     margin-top: 4px;
+    
     height: 63px;
 }
 .nav1{
 
     margin-top: 10px;
 }
-
-/* End of Navbar */
+.rimg2{
+    border-radius: 100%;
+    box-shadow: 0px 2.5px 0.5px  #202329;
+}
 
 
 

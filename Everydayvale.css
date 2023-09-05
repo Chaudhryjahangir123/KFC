@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    background-color: #f02228;
+    background-color: rgba(245, 0, 0, 0.8);
 }
 .evevalue{
     width: 85%;
@@ -114,7 +114,7 @@ nav button{
 }
 
 .navbar{
-    background-color: #f02228;
+    background-color: rgba(245, 0, 0, 0.8);
     box-shadow: 7px 10px 24px 0px rgba(255, 71, 31, 0.22);
     display: flex;
     height: 120px;
@@ -240,7 +240,7 @@ nav button{
 /* footernav */
 .footernav{
     height: 120px;
-    background-color: #f02228;
+    background-color: rgba(245, 0, 0, 0.8);
 }
 .fobj{
     display: flex;
