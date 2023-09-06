@@ -62,8 +62,8 @@ function updateButtonState() {
 }
 
 // Initial slide
-slideImage();
-updateButtonState();
+// slideImage();
+// updateButtonState();
 
 
 // End of slider1
