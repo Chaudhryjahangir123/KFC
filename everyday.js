@@ -8,8 +8,8 @@ var loi=['./everyday/bur.png','./everyday/bg1.png','./everyday/bg2.png','./every
 var content=['Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch + 1 regular Fries + 1 regular Drink','2 pieces of Hot and Crispy Fried Chicken+ fries+ dinner roll+ signature Vietnamese Sauce','3 pieces of Hot and Crispy Fried Chicken','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun','Spiced and buttery rice with 6 pcs of Hot Shots topped with our signature Vietnamese sauce']
 var listofcards=[]
 var price =["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560"]
-
-
+var cart=[];
+var maincart=document.getElementById("cart")
 
 for (let index = 0; index < cardno; index++) {
     var ptag= document.createElement("div")
@@ -113,7 +113,6 @@ for (let index = 0; index < cardno; index++) {
     
     listofcards.push(card); 
 }
-console.log(listofcards)
 
 function enter(card) {
     var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
@@ -140,27 +139,25 @@ function leave(card) {
     selectedimg.style.transform = "scale(1)";
 }
 
-// var cardinfo = document.createElement("div")
-// cardinfo.style.backgroundColor='blue'
-// cardinfo.style.height='1200px'
-// container.appendChild(cardinfo)
+function clicked(card) {
+    var clickedCard = card.Target; 
+    cart.push(clickedCard); 
+}
 
 
 
 
-function hide(card) {
-    var clickedCard = card.currentTarget;
-    var sherryContainer = clickedCard.closest('#container1'); // Assuming the container has a class of "container"
-    sherryContainer.style.display = "none";
-  }
+
 
 
 listofcards.forEach(function(card) {
     card.addEventListener("mouseenter", enter);
     card.addEventListener("mouseleave", leave);
-    card.addEventListener("click",hide);
-});    
+    card.addEventListener("click",clicked);
 
+
+});    
+console.log(cart)
 
 
 
@@ -258,7 +255,6 @@ for (let index = 0; index < cardno; index++) {
     listofcards2.push(card2);
 }
 
-console.log(listofcards2);
 
 function enter(card) {
     var clickedCard = card.currentTarget;
@@ -376,7 +372,6 @@ for (let index = 0; index < cardno; index++) {
     listofcards3.push(card3);
 }
 
-console.log(listofcards3);
 
 function enter(card) {
     var clickedCard = card.currentTarget;
@@ -493,7 +488,6 @@ for (let index = 0; index < cardno; index++) {
     listofcards4.push(card4);
 }
 
-console.log(listofcards4);
 
 function enter(card) {
     var clickedCard = card.currentTarget;
@@ -608,7 +602,6 @@ for (let index = 0; index < cardno; index++) {
     listofcards5.push(card5);
 }
 
-console.log(listofcards5);
 
 function enter(card) {
     var clickedCard = card.currentTarget;
@@ -724,7 +717,6 @@ for (let index = 0; index < cardno; index++) {
     listofcards6.push(card6);
 }
 
-console.log(listofcards6);
 
 function enter(card) {
     var clickedCard = card.currentTarget;
