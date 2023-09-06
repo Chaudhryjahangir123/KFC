@@ -68,11 +68,12 @@
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); */
     margin-top: 10px;
     overflow: hidden;
+    background-color: rgba(245, 0, 0, 0.8);
 }
 
 .s2{
     /* border: 1px black solid; */
-    background-color: rgba(245, 0, 0, 0.8);
+    background-color: #f73333;
     display: flex;
     color: white;
     height: 549px;
@@ -109,9 +110,7 @@
     font-weight: 300;
     line-height: normal;
 }
-.s:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
+
 .s2_2 img{
     position: absolute;
 }
