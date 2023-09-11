@@ -37,11 +37,15 @@ nav button{
     font-weight: 400;
     align-items: center;
     font-size: 30px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 70px;
     color:white;
     padding:0 20px;
     display: flex;
     margin: 0;
+}
+.header p{
+    font-size: 36px;
 }
 .line{
     width: 950px;
