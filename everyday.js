@@ -1,121 +1,125 @@
-var container = document.getElementById("container1");
-var container2 = document.getElementById("container2");
-var container3 = document.getElementById("container3");
-var container4 = document.getElementById("container4");
-var container5 = document.getElementById("container5");
-var container6 = document.getElementById("container6");
+var containers = document.querySelector(".containers");
 
+var everyDayValue = [
+  {
+    image: "./everyday/bur.png",
+    title: "Zingeratha",
+    description:
+      "Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha",
+  },
+  {
+    image: "./everyday/bur.png",
+    title: "Krunch Burger + Drink",
+    description:
+      "Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha",
+  },
+  {
+    image: "./everyday/bur.png",
+    title: "Krunch With Fries N Drink",
+    description:
+      "Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha",
+  },
+];
 
+function pagecreation(parent, noofcards, pname) {
+  var listofcards = [];
 
-var everydayvalue = {
-  loi: ['./everyday/bur.png','./everyday/bg1.png','./everyday/bg2.png','./everyday/bg3.png','./everyday/bg4.png','./everyday/bg5.png','./everyday/burgir.png','./everyday/chawal.png'],
-  heads: ['Zingeratha','Krunch Burger + Drink ','Krunch With Fries N Drink','Chicken N chips ','3 Piece chicken','Krunch chicken combo','Krunch Burger','Rice N Spice'],
-  content:['Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch + 1 regular Fries + 1 regular Drink','2 pieces of Hot and Crispy Fried Chicken+ fries+ dinner roll+ signature Vietnamese Sauce','3 pieces of Hot and Crispy Fried Chicken','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun','Spiced and buttery rice with 6 pcs of Hot Shots topped with our signature Vietnamese sauce'],
-  price: ["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560"],
-};
-function pagecreation(parent,noofcards,pname) {
-  var listofcards=[]
-  
   for (let index = 0; index < noofcards; index++) {
-
     var ptag = document.createElement("div");
     var card = document.createElement("div");
     var imgcont = document.createElement("div");
-  var imgs = document.createElement("img");
-  
-  var cname = document.createElement("p");
-  var cont = document.createElement("p");
-  var button = document.createElement("button");
-  var bcon = document.createElement("p");
-  var pr = document.createElement("p");
-  
-  card.setAttribute('id', `card${index + 1}`);
-  imgs.src = pname.loi[index];
-  card.appendChild(imgcont);
-  card.appendChild(cname);
-  card.appendChild(cont);
-  card.appendChild(ptag);
-  ptag.appendChild(pr);
-  ptag.appendChild(button);
-  button.appendChild(bcon);
-  imgcont.appendChild(imgs);
-  bcon.innerHTML = "Add to Bucket";
-  pr.innerHTML = pname.price[index];
-  cont.innerHTML = pname.content[index];
-  cname.innerHTML = pname.heads[index];
-  cname.style.color = 'black';
-  cont.style.color = 'black';
-  cont.style.textAlign = 'center';
-  cont.style.width = '90%';
-  cont.style.height = "80px";
-  card.style.display = 'flex';
-  ptag.style.display = 'flex';
-  ptag.style.alignItems = 'center';
-  ptag.style.marginTop = '20px';
-  parent.style.backgroundColor="rgba(245, 0, 0, 0.8)"
-  ptag.style.justifyContent = 'space-around';
-  pr.style.color = 'black';
-  pr.style.fontSize = '24px';
-  
-  card.style.backgroundColor = 'white';
-  cname.style.fontSize = '24px';
-  cont.style.fontSize = '20px';
+    var imgs = document.createElement("img");
 
-  card.style.flexDirection = 'column';
-  card.style.alignItems = 'center';
-  
-  card.style.justifyContent = 'center';
-  card.style.width = "324.392px";
-  card.style.gap = "10px";
-  ptag.style.width = "100%";
-  
-  card.style.height = "513.968px";
-  
-  card.style.borderRadius = "50px";
-  button.style.width = "120px";
-  button.style.height = "40px";
-  button.style.borderRadius = "15px";
-  button.style.backgroundColor = "#FFB737";
-  button.style.border = "none";
-  button.style.color = "white";
-  
-  button.style.fontSize = "14px";
-  
-  imgs.style.width = '250px';
-  imgs.style.height = '225px';
-  imgcont.style.marginBottom = '30px';
-  imgcont.style.marginTop = '-13px';
-  
-  imgcont.style.borderRadius = '50px';
-  imgcont.style.backgroundColor = 'rgba(245, 0, 0, 0.8)';
-  imgcont.style.width = '300px';
-  imgcont.style.height = '250px';
-  imgcont.style.display = 'flex';
-  imgcont.style.alignItems = 'center';
-  imgcont.style.justifyContent = 'center';
-  parent.appendChild(card);
-  listofcards.push(card); 
-}
+    var cname = document.createElement("p");
+    var cont = document.createElement("p");
+    var button = document.createElement("button");
+    var bcon = document.createElement("p");
+    var pr = document.createElement("p");
 
+    card.setAttribute("id", `card${index + 1}`);
+    imgs.src = pname.loi[index];
+    card.appendChild(imgcont);
+    card.appendChild(cname);
+    card.appendChild(cont);
+    card.appendChild(ptag);
+    ptag.appendChild(pr);
+    ptag.appendChild(button);
+    button.appendChild(bcon);
+    imgcont.appendChild(imgs);
+    bcon.innerHTML = "Add to Bucket";
+    pr.innerHTML = pname.price[index];
+    cont.innerHTML = pname.content[index];
+    cname.innerHTML = pname.heads[index];
+    cname.style.color = "black";
+    cont.style.color = "black";
+    cont.style.textAlign = "center";
+    cont.style.width = "90%";
+    cont.style.height = "80px";
+    card.style.display = "flex";
+    ptag.style.display = "flex";
+    ptag.style.alignItems = "center";
+    ptag.style.marginTop = "20px";
+    parent.style.backgroundColor = "rgba(245, 0, 0, 0.8)";
+    ptag.style.justifyContent = "space-around";
+    pr.style.color = "black";
+    pr.style.fontSize = "24px";
 
+    card.style.backgroundColor = "white";
+    cname.style.fontSize = "24px";
+    cont.style.fontSize = "20px";
 
-function enter(card) {
-  var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
-  var selectedimg = clickedCard.getElementsByTagName("img")[0]; // Get the image element inside the card
-  
-  clickedCard.style.transform = "scale(1.05)";
-  selectedimg.style.transform = "scale(1.2)";
-  selectedimg.style.padding = "scale(1.1)";
-  clickedCard.style.cursor = "pointer";
-  
-  clickedCard.style.transition=".1s ease .1s";
-  selectedimg.style.transition=".1s ease .1s";
-  
-  
-  clickedCard.style.boxShadow = "5px 5px 15px grey";
-}
+    card.style.flexDirection = "column";
+    card.style.alignItems = "center";
 
-function leave(card) {
+    card.style.justifyContent = "center";
+    card.style.width = "324.392px";
+    card.style.gap = "10px";
+    ptag.style.width = "100%";
+
+    card.style.height = "513.968px";
+
+    card.style.borderRadius = "50px";
+    button.style.width = "120px";
+    button.style.height = "40px";
+    button.style.borderRadius = "15px";
+    button.style.backgroundColor = "#FFB737";
+    button.style.border = "none";
+    button.style.color = "white";
+
+    button.style.fontSize = "14px";
+
+    imgs.style.width = "250px";
+    imgs.style.height = "225px";
+    imgcont.style.marginBottom = "30px";
+    imgcont.style.marginTop = "-13px";
+
+    imgcont.style.borderRadius = "50px";
+    imgcont.style.backgroundColor = "rgba(245, 0, 0, 0.8)";
+    imgcont.style.width = "300px";
+    imgcont.style.height = "250px";
+    imgcont.style.display = "flex";
+    imgcont.style.alignItems = "center";
+    imgcont.style.justifyContent = "center";
+    parent.appendChild(card);
+    listofcards.push(card);
+  }
+
+  function enter(card) {
+    var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
+    var selectedimg = clickedCard.getElementsByTagName("img")[0]; // Get the image element inside the card
+
+    clickedCard.style.transform = "scale(1.05)";
+    selectedimg.style.transform = "scale(1.2)";
+    selectedimg.style.padding = "scale(1.1)";
+    clickedCard.style.cursor = "pointer";
+
+    clickedCard.style.transition = ".1s ease .1s";
+    selectedimg.style.transition = ".1s ease .1s";
+
+    clickedCard.style.boxShadow = "5px 5px 15px grey";
+  }
+
+  function leave(card) {
     var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
     var selectedimg = clickedCard.getElementsByTagName("img")[0]; // Get the image element inside the card
 
@@ -123,212 +127,140 @@ function leave(card) {
     clickedCard.style.boxShadow = "0px 0px 0px";
     selectedimg.style.transform = "scale(1)";
   }
-  
-  
-  listofcards.forEach(function(card) {
+
+  listofcards.forEach(function (card) {
     card.addEventListener("mouseenter", enter);
     card.addEventListener("mouseleave", leave);
   });
-  
-  
-  
 }
 
-
-pagecreation(container,5,everydayvalue);
-pagecreation(container2,7,everydayvalue);
-pagecreation(container3,5,everydayvalue); 
-pagecreation(container4,3,everydayvalue); 
-pagecreation(container5,5,everydayvalue); 
-pagecreation(container6,4,everydayvalue); 
+pagecreation(container, 5, everydayvalue);
+pagecreation(container2, 7, everydayvalue);
+pagecreation(container3, 5, everydayvalue);
+pagecreation(container4, 3, everydayvalue);
+pagecreation(container5, 5, everydayvalue);
+pagecreation(container6, 4, everydayvalue);
 
 // navs for different itemlists
 
-var valuebtn = document.getElementById('Everydayvalue')
-
-
+var valuebtn = document.getElementById("Everydayvalue");
 
 function valuepage() {
-  container.style.display='flex'
-    container2.style.display='none'
-    container3.style.display='none'
-    container4.style.display='none'
-    container5.style.display='none'
-    container6.style.display='none'
-    valuebtn.style.border='2px solid white'
-    alcartebtn.style.border='none'
-    sboxbtn.style.border='none'
-    sharingbtn.style.border='none'
-    mnightbtn.style.border='none'
-    snacksbtn.style.border='none'
-  }
-
-  valuebtn.addEventListener("click",valuepage)
-  
-  var alcartebtn = document.getElementById('alacarte')
-  
-  function arlcartepage() {
-    container2.style.display='flex'
-    container.style.display='none'
-    container3.style.display='none'
-    container4.style.display='none'
-    container5.style.display='none'
-    container6.style.display='none'
-    
-    alcartebtn.style.border='2px solid white'
-    sboxbtn.style.border='none'
-    sharingbtn.style.border='none'
-    mnightbtn.style.border='none'
-    valuebtn.style.border='none'
-    snacksbtn.style.border='none'
-    
-    
-  }
-  
-  alcartebtn.addEventListener("click",arlcartepage)
-  
-var sboxbtn = document.getElementById('sbox')
-
-
-function sboxpage() {
-    container3.style.display='flex'
-    container2.style.display='none'
-    container.style.display='none'
-    container4.style.display='none'
-    container5.style.display='none'
-    container6.style.display='none'
-    
-    sboxbtn.style.border='2px solid white'
-    sharingbtn.style.border='none'
-    mnightbtn.style.border='none'
-    valuebtn.style.border='none'
-    alcartebtn.style.border='none'
-    snacksbtn.style.border='none'
-    
-    
-  }
-  
-  sboxbtn.addEventListener("click",sboxpage)
-  
-  var sharingbtn = document.getElementById('sharing')
-  
-  
-  function sharingpage() {
-    container4.style.display='flex'
-    container2.style.display='none'
-    container3.style.display='none'
-    container.style.display='none'
-    container5.style.display='none'
-    container6.style.display='none'
-    
-    sharingbtn.style.border='2px solid white'
-    mnightbtn.style.border='none'
-    valuebtn.style.border='none'
-    sboxbtn.style.border='none'
-    alcartebtn.style.border='none'
-    snacksbtn.style.border='none'
-    
-  }
-  
-  sharingbtn.addEventListener("click",sharingpage)
-  
-  
-  var snacksbtn = document.getElementById('snacks')
-  
-  function snackspage() {
-    container5.style.display='flex'
-    container2.style.display='none'
-    container3.style.display='none'
-    container4.style.display='none'
-    container.style.display='none'
-    container6.style.display='none'
-    
-    mnightbtn.style.border='none'
-    valuebtn.style.border='none'
-    sboxbtn.style.border='none'
-    alcartebtn.style.border='none'
-    sharingbtn.style.border='none'
-    snacksbtn.style.border='2px solid white'
-    
-  }
-
-snacksbtn.addEventListener("click",snackspage)
-
-
-var mnightbtn = document.getElementById('mnight')
-
-function mnightpage() {
-  container6.style.display='flex'
-    container2.style.display='none'
-    container3.style.display='none'
-    container4.style.display='none'
-    container5.style.display='none'
-    container.style.display='none'
-    
-    mnightbtn.style.border='2px solid white'
-    valuebtn.style.border='none'
-    sboxbtn.style.border='none'
-    alcartebtn.style.border='none'
-    sharingbtn.style.border='none'
-    snacksbtn.style.border='none'
-    
-    
+  container.style.display = "flex";
+  container2.style.display = "none";
+  container3.style.display = "none";
+  container4.style.display = "none";
+  container5.style.display = "none";
+  container6.style.display = "none";
+  valuebtn.style.border = "2px solid white";
+  alcartebtn.style.border = "none";
+  sboxbtn.style.border = "none";
+  sharingbtn.style.border = "none";
+  mnightbtn.style.border = "none";
+  snacksbtn.style.border = "none";
 }
 
-mnightbtn.addEventListener("click",mnightpage)
+valuebtn.addEventListener("click", valuepage);
 
+var alcartebtn = document.getElementById("alacarte");
 
+function arlcartepage() {
+  container2.style.display = "flex";
+  container.style.display = "none";
+  container3.style.display = "none";
+  container4.style.display = "none";
+  container5.style.display = "none";
+  container6.style.display = "none";
 
+  alcartebtn.style.border = "2px solid white";
+  sboxbtn.style.border = "none";
+  sharingbtn.style.border = "none";
+  mnightbtn.style.border = "none";
+  valuebtn.style.border = "none";
+  snacksbtn.style.border = "none";
+}
 
+alcartebtn.addEventListener("click", arlcartepage);
 
+var sboxbtn = document.getElementById("sbox");
 
+function sboxpage() {
+  container3.style.display = "flex";
+  container2.style.display = "none";
+  container.style.display = "none";
+  container4.style.display = "none";
+  container5.style.display = "none";
+  container6.style.display = "none";
 
+  sboxbtn.style.border = "2px solid white";
+  sharingbtn.style.border = "none";
+  mnightbtn.style.border = "none";
+  valuebtn.style.border = "none";
+  alcartebtn.style.border = "none";
+  snacksbtn.style.border = "none";
+}
 
+sboxbtn.addEventListener("click", sboxpage);
 
+var sharingbtn = document.getElementById("sharing");
 
+function sharingpage() {
+  container4.style.display = "flex";
+  container2.style.display = "none";
+  container3.style.display = "none";
+  container.style.display = "none";
+  container5.style.display = "none";
+  container6.style.display = "none";
 
+  sharingbtn.style.border = "2px solid white";
+  mnightbtn.style.border = "none";
+  valuebtn.style.border = "none";
+  sboxbtn.style.border = "none";
+  alcartebtn.style.border = "none";
+  snacksbtn.style.border = "none";
+}
 
+sharingbtn.addEventListener("click", sharingpage);
 
+var snacksbtn = document.getElementById("snacks");
 
+function snackspage() {
+  container5.style.display = "flex";
+  container2.style.display = "none";
+  container3.style.display = "none";
+  container4.style.display = "none";
+  container.style.display = "none";
+  container6.style.display = "none";
 
+  mnightbtn.style.border = "none";
+  valuebtn.style.border = "none";
+  sboxbtn.style.border = "none";
+  alcartebtn.style.border = "none";
+  sharingbtn.style.border = "none";
+  snacksbtn.style.border = "2px solid white";
+}
 
+snacksbtn.addEventListener("click", snackspage);
 
+var mnightbtn = document.getElementById("mnight");
 
+function mnightpage() {
+  container6.style.display = "flex";
+  container2.style.display = "none";
+  container3.style.display = "none";
+  container4.style.display = "none";
+  container5.style.display = "none";
+  container.style.display = "none";
 
+  mnightbtn.style.border = "2px solid white";
+  valuebtn.style.border = "none";
+  sboxbtn.style.border = "none";
+  alcartebtn.style.border = "none";
+  sharingbtn.style.border = "none";
+  snacksbtn.style.border = "none";
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+mnightbtn.addEventListener("click", mnightpage);
 
 // everydayvalue
 // var heads=['Zingeratha','Krunch Burger + Drink ','Krunch With Fries N Drink','Chicken N chips ','3 Piece chicken','Krunch chicken combo','Krunch Burger','Rice N Spice']
@@ -337,15 +269,6 @@ mnightbtn.addEventListener("click",mnightpage)
 // var listofcards=[]
 // var price =["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560"]
 // var cart=[];
-
-
-
-
-
-
-
-
-
 
 // for (let index = 0; index < cardno; index++) {
 //     var ptag= document.createElement("div")
@@ -379,8 +302,7 @@ mnightbtn.addEventListener("click",mnightpage)
 
 //     cont.style.textAlign='center'
 //     cont.style.width='90%'
-    
-    
+
 //     cont.style.height="80px"
 //     container.appendChild(card)
 //     card.style.display='flex'
@@ -392,18 +314,12 @@ mnightbtn.addEventListener("click",mnightpage)
 //     pr.style.color='black'
 //     pr.style.fontSize='24px'
 
-
-
-
-
 //     card.style.backgroundColor='white'
 //     cname.style.fontSize='24px'
 //     cont.style.fontSize='20px'
-    
+
 //     card.style.flexDirection='column'
 //     card.style.alignItems='center'
-    
-
 
 //     card.style.justifyContent='center'
 //     card.style.width= "324.392px";
@@ -419,17 +335,13 @@ mnightbtn.addEventListener("click",mnightpage)
 //     button.style.backgroundColor= "#FFB737";
 //     button.style.border= "none";
 //     button.style.color= "white";
-    
+
 //     button.style.fontSize= "14px";
 
-
-    
 //     imgs.style.width='250px'
 //     imgs.style.height='225px'
 //     imgcont.style.marginBottom='30px'
 //     imgcont.style.marginTop='-13px'
-
-
 
 //     imgcont.style.borderRadius='50px'
 //     imgcont.style.backgroundColor='rgba(245, 0, 0, 0.8)'
@@ -439,21 +351,12 @@ mnightbtn.addEventListener("click",mnightpage)
 //     imgcont.style.alignItems='center'
 //     imgcont.style.justifyContent='center'
 
-
-
-
-
-
-    
-//     listofcards.push(card); 
+//     listofcards.push(card);
 // }
-
-
 
 // // onclick (()=>{cardclicked(index)})
 // //card click (index)
 // //
-
 
 // function enter(card) {
 //     var clickedCard = card.currentTarget; // Use currentTarget to refer to the card element
@@ -466,7 +369,6 @@ mnightbtn.addEventListener("click",mnightpage)
 
 //     clickedCard.style.transition=".1s ease .1s";
 //     selectedimg.style.transition=".1s ease .1s";
-
 
 //     clickedCard.style.boxShadow = "5px 5px 15px grey";
 // }
@@ -481,37 +383,19 @@ mnightbtn.addEventListener("click",mnightpage)
 // }
 
 // function clicked(card) {
-//     var clickedCard = card.Target; 
-//     cart.push(clickedCard); 
+//     var clickedCard = card.Target;
+//     cart.push(clickedCard);
 // }
-
-
-
-
-
-
 
 // listofcards.forEach(function(card) {
 //     card.addEventListener("mouseenter", enter);
 //     card.addEventListener("mouseleave", leave);
 //     card.addEventListener("click",clicked);
 
-
-// });    
+// });
 // console.log(cart)
 
-
-
-
-
-
-
-
-
-
-
 // // alcarte
-
 
 // var container2 = document.getElementById("container2");
 // var cardno = 10;
@@ -596,7 +480,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     listofcards2.push(card2);
 // }
 
-
 // function enter(card) {
 //     var clickedCard = card.currentTarget;
 //     var selectedimg = clickedCard.getElementsByTagName("img")[0];
@@ -623,10 +506,7 @@ mnightbtn.addEventListener("click",mnightpage)
 //     card.addEventListener("mouseleave", leave);
 // });
 
-
-
 // // end elcarte
-
 
 // // signature boxes
 
@@ -713,7 +593,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     listofcards3.push(card3);
 // }
 
-
 // function enter(card) {
 //     var clickedCard = card.currentTarget;
 //     var selectedimg = clickedCard.getElementsByTagName("img")[0];
@@ -740,10 +619,7 @@ mnightbtn.addEventListener("click",mnightpage)
 //     card.addEventListener("mouseleave", leave);
 // });
 
-
 // // end of signature box
-
-
 
 // // sharing
 // var container4 = document.getElementById("container4"); // Change container3 to container4
@@ -829,7 +705,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     listofcards4.push(card4);
 // }
 
-
 // function enter(card) {
 //     var clickedCard = card.currentTarget;
 //     var selectedimg = clickedCard.getElementsByTagName("img")[0];
@@ -856,7 +731,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     card.addEventListener("mouseleave", leave);
 // });
 // // end share
-
 
 // // snacks and beverages
 // var container5 = document.getElementById("container5"); // Change container4 to container5
@@ -943,7 +817,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     listofcards5.push(card5);
 // }
 
-
 // function enter(card) {
 //     var clickedCard = card.currentTarget;
 //     var selectedimg = clickedCard.getElementsByTagName("img")[0];
@@ -964,15 +837,12 @@ mnightbtn.addEventListener("click",mnightpage)
 //     selectedimg.style.transform = "scale(1)";
 // }
 
-
 // listofcards5.forEach(function (card) {
 //     card.addEventListener("mouseenter", enter);
 //     card.addEventListener("mouseleave", leave);
 // });
 
-
 // // end snacks n bevs
-
 
 // // midnight
 // var container6 = document.getElementById("container6"); // Change container5 to container6
@@ -1058,7 +928,6 @@ mnightbtn.addEventListener("click",mnightpage)
 //     listofcards6.push(card6);
 // }
 
-
 // function enter(card) {
 //     var clickedCard = card.currentTarget;
 //     var selectedimg = clickedCard.getElementsByTagName("img")[0];
@@ -1085,7 +954,5 @@ mnightbtn.addEventListener("click",mnightpage)
 //     card.addEventListener("mouseleave", leave);
 // });
 // // end mid night
-
-
 
 // function of pages
