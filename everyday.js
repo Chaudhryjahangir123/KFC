@@ -52,7 +52,7 @@ function pagecreation(parent,noofcards,pname) {
   ptag.style.display = 'flex';
   ptag.style.alignItems = 'center';
   ptag.style.marginTop = '20px';
-  parent.style.backgroundColor="red"
+  parent.style.backgroundColor="rgba(245, 0, 0, 0.8)"
   ptag.style.justifyContent = 'space-around';
   pr.style.color = 'black';
   pr.style.fontSize = '24px';
