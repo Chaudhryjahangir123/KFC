@@ -61,11 +61,14 @@ body {
 
 .maindiv{
     border: 1px solid black;
-    width: 60%;
-    height: 400px;
+    width: 72%;
+    height: 350px;
     margin-left: 250px;
     margin-top: 70px;
     display: flex;
+}
+.arrow{
+    border: 1px solid black;
 }
 .lastdiv{
     border: 1px solid black;
