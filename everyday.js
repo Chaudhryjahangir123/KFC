@@ -7,22 +7,25 @@ var container6 = document.getElementById("container6");
 
 
 
+
+
 var everydayvalue = {
   loi: ['./everyday/bur.png','./everyday/bg1.png','./everyday/bg2.png','./everyday/bg3.png','./everyday/bg4.png','./everyday/bg5.png','./everyday/burgir.png','./everyday/chawal.png'],
   heads: ['Zingeratha','Krunch Burger + Drink ','Krunch With Fries N Drink','Chicken N chips ','3 Piece chicken','Krunch chicken combo','Krunch Burger','Rice N Spice'],
   content:['Crispy chicken, sliced onions tangy imli chutney, mint mayo wrapped in a soft paratha','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch + 1 regular Fries + 1 regular Drink','2 pieces of Hot and Crispy Fried Chicken+ fries+ dinner roll+ signature Vietnamese Sauce','3 pieces of Hot and Crispy Fried Chicken','1 Krunch burger + 1 pc of Hot and Crispy Fried Chicken + 1 regular drink','Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun','Spiced and buttery rice with 6 pcs of Hot Shots topped with our signature Vietnamese sauce'],
   price: ["Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560","Rs 560"],
 };
+
+
 function pagecreation(parent,noofcards,pname) {
   var listofcards=[]
-  
+  var cart = [];
   for (let index = 0; index < noofcards; index++) {
 
     var ptag = document.createElement("div");
     var card = document.createElement("div");
     var imgcont = document.createElement("div");
   var imgs = document.createElement("img");
-  
   var cname = document.createElement("p");
   var cont = document.createElement("p");
   var button = document.createElement("button");
@@ -95,6 +98,9 @@ function pagecreation(parent,noofcards,pname) {
   imgcont.style.justifyContent = 'center';
   parent.appendChild(card);
   listofcards.push(card); 
+  button.onclick = function () {
+    addToCart(pname.heads[index], pname.price[index]);
+  };
 }
 
 
